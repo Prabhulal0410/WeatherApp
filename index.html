@@ -19,38 +19,38 @@
     class="bg-gradient-to-br from-slate-900 to-slate-800 min-h-screen flex items-center justify-center"
   >
     <div
-      class="w-[90%] max-w-[470px] bg-white/10 backdrop-blur-lg border border-white/20 text-slate-100 text-center rounded-xl shadow-lg px-8 py-10"
+      class="w-[90%] max-w-[470px] bg-white/10 backdrop-blur-lg border border-white/20 text-slate-100 text-center rounded-xl shadow-lg px-6 py-8"
     >
+      <!-- 🔍 Search Bar -->
       <div
-        class="search flex items-center justify-between bg-white/20 rounded-full overflow-hidden shadow-md"
+        class="search flex items-center bg-white/20 rounded-full overflow-hidden shadow-md"
       >
         <input
           type="text"
           placeholder="Enter city name"
           spellcheck="false"
-          class="flex-1 px-6 py-4 bg-[#ebfffc] text-gray-700 text-lg outline-none border-none"
+          class="w-full sm:w-auto flex-1 px-4 py-3 bg-[#ebfffc] text-gray-700 text-base outline-none rounded-none"
         />
         <button
-          class="w-16 h-16 bg-[#ebfffc] hover:bg-[#d4f7f5] flex items-center justify-center transition duration-300"
+          class="px-4 py-3 bg-[#ebfffc] hover:bg-[#d4f7f5] transition duration-300"
         >
-          <img src="./images/search.png" alt="Search" class="w-6" />
+          <img src="./images/search.png" alt="Search" class="w-5" />
         </button>
       </div>
 
+      <!-- ⚠️ Error Message -->
       <div class="error text-left ml-2 text-sm mt-3 hidden">
         <p>Invalid city name</p>
       </div>
 
+      <!-- ☁️ Weather Info -->
       <div class="weather hidden">
-        <!-- Weather Icon -->
         <img
           src="./images/clouds.png"
           class="weather-icon w-[120px] sm:w-[170px] mt-8 mx-auto"
           alt="Weather Icon"
         />
-        <!-- Temperature -->
-        <h1 class="temp text-[60px] sm:text-[80px] font-medium">30°c</h1>
-        <!-- City -->
+        <h1 class="temp text-[50px] sm:text-[80px] font-medium">30°c</h1>
         <h2 class="city text-[30px] sm:text-[45px] font-normal -mt-2">
           Mumbai
         </h2>
@@ -76,6 +76,7 @@
       </div>
     </div>
 
+    <!-- 📦 JS file -->
     <script src="./index.js"></script>
   </body>
 </html>
